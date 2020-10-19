@@ -1,21 +1,18 @@
+.material-icons {
+  margin-right: 5px;
+}
+
 .collection-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: background 300ms ease-in-out;
 }
 
-.collection-item:hover {
-  background: #ddd;
+.collection-item i {
   cursor: pointer;
 }
 
-.collection-item > i {
-  cursor: pointer;
-  transform: scale(1);
-  transition: transform 300ms ease-in-out;
-}
-
-.collection-item > i:hover {
-  transform: scale(1.05);
+.vote-box {
+  display: flex;
+  align-items: center;
 }

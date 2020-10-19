@@ -13,7 +13,14 @@ import SongList from './components/SongList';
 import SongCreate from './components/SongCreate';
 import SongDetail from './components/SongDetail';
 
-const client = new ApolloClient({});
+// dataIdFromObject
+// Identifier of the 'data' from every request.
+// i.e.: Taking the IDs from all of our different records
+// and associating that with our components inside
+// the React application. ALl behind the scenes.
+const client = new ApolloClient({
+  dataIdFromObject: o => o.id
+});
 
 // ApolloProvider is wrapping the entire Router
 // hashHistory
