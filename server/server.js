@@ -4,11 +4,11 @@ const expressGraphQL = require('express-graphql');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const schema = require('./schema/schema');
-
+const CONFIG = require('../config');
 const app = express();
 
 // Replace with your mongoLab URI
-const MONGO_URI = '';
+const MONGO_URI = `mongodb://${CONFIG.USERNAME}:${CONFIG.PASSWORD}@ds047732.mlab.com:47732/lyricaldb`;
 if (!MONGO_URI) {
   throw new Error('You must provide a MongoLab URI');
 }
