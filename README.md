@@ -53,6 +53,6 @@ Starter project from a GraphQL course on Udemy.com
 e.g.: We only want the `title` of each songs in the SongList component.
 Thus we don't need to fetch a bunch of details about the song that we don't need.
 
-# Running Queries
+# Running `Query` and `Mutation`
 
 Make use of the library `graphql-tag`
